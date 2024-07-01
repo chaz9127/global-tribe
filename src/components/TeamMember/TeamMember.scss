@@ -1,0 +1,61 @@
+.member-card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    flex: 0 0 22%;
+    max-width: 22%;
+    margin-bottom: 24px;
+
+    .member-description {
+        text-align: center;
+        background-color: white;
+        padding: 0 0 32px 0;
+
+        .member-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 16px 0;
+        }
+
+        .member-job-title {
+            color: orangered;
+            font-size: 18px;
+        }
+    }
+    .member-headshot {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        overflow: hidden;
+
+        img {
+            text-align: center;
+            height: 100%;
+            margin-left: -30px;
+            transition-property: height, margin-left;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+
+
+            &:hover {
+                height: 110%;
+                margin-left: -50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .member-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .member-headshot {
+            img {
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+            }
+        }
+    }
+}

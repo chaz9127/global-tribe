@@ -7,68 +7,72 @@ footer {
     height: auto;
 
     .footer-content {
-        padding: 80px 48px;
         background-color:  rgba(28,28,28, 0.95);
-        display: flex;
-        justify-content: space-between;
-        padding: 60px 40px;
-        color: rgba(255,255,255,0.5);
-        font-size: 20px;
 
-        .footer-column {
-            flex: 0 0 30%;
-            max-width: 30%;
+        .footer-inner {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            padding: 60px 40px;
+            color: rgba(255,255,255,0.5);
+            font-size: 20px;
+            max-width: 1170px;
+            margin: 0 auto;
 
-            &.quick-link-column {
-                padding-left: 48px;
-            }
+            .footer-column {
+                flex: 0 0 30%;
+                max-width: 30%;
+                display: flex;
+                flex-direction: column;
 
-            .footer-header {
-                color: white;
-                font-size: 32px;
-                font-weight: bold;
-                display: inline-block;
-                height: 85px;
-                line-height: 85px;
-            }
+                &.quick-link-column {
+                    padding-left: 48px;
+                }
 
-            .quick-links {
-                li {
-                    margin-top: 16px;
+                .footer-header {
+                    color: white;
+                    font-size: 32px;
+                    font-weight: bold;
+                    display: inline-block;
+                    height: 85px;
+                    line-height: 85px;
+                }
 
-                    a {
-                        color: inherit;
-                        text-decoration: none;
+                .quick-links {
+                    li {
+                        margin-top: 16px;
 
-                        &:hover {
-                            text-decoration: underline;
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
-            }
-            .contact-links {
-                li {
-                    margin-top: 16px;
+                .contact-links {
+                    li {
+                        margin-top: 16px;
 
-                    a {
-                        color: inherit;
-                        text-decoration: none;
-                        display: flex;
-                        align-items: flex-start;
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                            display: flex;
+                            align-items: flex-start;
 
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                        .link-arrow {
-                            margin-top: 5px;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            .link-arrow {
+                                margin-top: 5px;
+                            }
                         }
                     }
                 }
-            }
-            .link-arrow {
-                margin-right: 12px;
+                .link-arrow {
+                    margin-right: 12px;
+                }
             }
         }
 
@@ -104,15 +108,17 @@ footer {
 @media (max-width: 768px) {
     footer {
         .footer-content {
-            flex-direction: column;
+            .footer-inner {
+                flex-direction: column;
 
-            .footer-column {
-                flex: 0 0 100%;
-                max-width: 100%;
-                margin-bottom: 32px;
+                .footer-column {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin-bottom: 32px;
 
-                &.quick-link-column {
-                    padding-left: 0;
+                    &.quick-link-column {
+                        padding-left: 0;
+                    }
                 }
             }
         }

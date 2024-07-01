@@ -142,6 +142,9 @@
     .main-body {
         .main-section {
             padding: 40px 24px 0 24px;
+            .section-header {
+                font-size: 24px;
+            }
             .section-content {
                 flex-direction: column;
                 .section-copy {
@@ -149,7 +152,7 @@
                         flex-direction: column;
                     }
                     .section-title {
-                        font-size: 32px;
+                        font-size: 36px;
                     }
                 }
                 .section-image {

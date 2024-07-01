@@ -1,5 +1,5 @@
 import TeamMemberType from './TeamMember';
 
-export {
+export type {
     TeamMemberType
 };

@@ -8,6 +8,7 @@ import {
 import './index.scss'
 import Nav from './components/Nav/Nav.tsx';
 import Footer from './components/Footer/Footer.tsx';
+import About from './pages/About/About.tsx';
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,15 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <App/>
+        <Footer />
+      </>
+    ),
+  },{
+    path: "/about",
+    element: (
+      <>
+        <Nav />
+        <About />
         <Footer />
       </>
     ),

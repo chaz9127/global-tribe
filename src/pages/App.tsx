@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { TEAM_MEMBERS } from '../utils/constants';
 import { TeamMemberType } from '../utils/types';
-import './App.scss';
 import TeamMember from '../components/TeamMember/TeamMember';
+import Hero from '../components/Hero/Hero';
+import './App.scss';
 
 function App() {
   const buildTeamMembers = () => {
@@ -21,20 +22,12 @@ function App() {
   }
   return (
     <>
-      <div className="hero">
-        <div className="hero-content-background">
-          <div className="hero-content">
-            <h2 className="hero-header">International<br />Sportsino</h2>
-            <p className="hero-description">
-              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <Link to='/about' className="hero-cta">
-              <span>Learn more</span>
-              <i className="fa-solid fa-arrow-right-long"></i>
-            </Link>
-          </div>
-        </div>
-      </div>
+      <Hero
+        title="International Sportsino"
+        description="Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ctaUrl="/about"
+        ctaText="Learn More"
+      />
       <div className="main-body">
         <section className="main-section">
           <div className="section-header">

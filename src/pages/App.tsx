@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { TEAM_MEMBERS } from '../utils/constants';
 import { TeamMemberType } from '../utils/types';
 import TeamMember from '../components/TeamMember/TeamMember';

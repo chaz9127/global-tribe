@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.scss';
 
@@ -23,6 +23,10 @@ const Nav = () => {
         const activeClass = link === window.location.pathname ? 'active' : '';
         return `${activeClass}`;
     };
+
+    useEffect(() => {
+        setShowMobileNav(false);
+    }, [window.location.href])
     
     const closeNav = () => {
         setShowMobileNav(false);

@@ -24,6 +24,7 @@ const About: React.FC = () => {
         <>
             <Hero
                 title="About Us"
+                condensed={true}
             />
             
             <div className="main-body">

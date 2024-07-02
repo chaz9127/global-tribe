@@ -1,0 +1,10 @@
+.contact-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px ) {
+    .contact-body {
+        flex-direction: column;
+    }
+}

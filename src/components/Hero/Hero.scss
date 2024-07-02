@@ -61,9 +61,13 @@
 @media (max-width: 768px) {
     .hero {
         padding-top: 50px;
+        min-height: 150px;
         .hero-content-background {
             padding: 10px 24px;
             .hero-content {
+                &.condensed {
+                    min-height: 150px;
+                }
                 .hero-header {
                     font-size: 48px;
                 }

@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                                     <span>
                                         123 Fake St.<br />
                                         P.O. Box 456<br />
-                                        Miami, Flordia 12345
+                                        Boca Raton, Flordia 12345
                                     </span>
                                 </Link>
                             </li>

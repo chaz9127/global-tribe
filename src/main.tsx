@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './pages/App.tsx'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.scss'
+import App from './pages/App.tsx'
 import Nav from './components/Nav/Nav.tsx';
 import Footer from './components/Footer/Footer.tsx';
 import About from './pages/About/About.tsx';
+import Contact from './pages/Contact/Contact.tsx';
+import './index.scss'
 
 
 const router = createBrowserRouter([
@@ -21,12 +22,23 @@ const router = createBrowserRouter([
         <Footer />
       </>
     ),
-  },{
+  },
+  {
     path: "/about",
     element: (
       <>
         <Nav />
         <About />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <>
+        <Nav />
+        <Contact />
         <Footer />
       </>
     ),

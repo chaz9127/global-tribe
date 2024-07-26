@@ -1,0 +1,43 @@
+.slide-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .slide {
+        width: 100vw;
+        height: 100vh;
+        transition: transform ease-in-out 1s;
+        position: absolute;
+        transform: translateX(100%);
+        z-index: 0;
+        visibility: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.show {
+            transform: translateX(0);
+            visibility: visible;
+        }
+        &.leaving-slide {
+            visibility: visible;
+        }
+        &.prev-slide {
+            transform: translateX(-100%);
+        }
+    }
+    .slide-controls {
+        .slide-button {
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            cursor: pointer;
+            font-size: 48px;
+            &.next-button {
+                right: 20px;
+            }
+            &.prev-button {
+                left: 20px;
+            }
+        }
+    }
+}
